@@ -1,0 +1,5 @@
+  <ListView [items]="MenuItems" (itemTap)="onItemTap($event)">
+    <template let-item="item" let-i="index">
+      <Label [text]="item.name" class="listViewItem"></Label>
+    </template>
+  </ListView>
