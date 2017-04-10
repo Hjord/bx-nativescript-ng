@@ -19,8 +19,8 @@ export class MainComponent {
 
     constructor(private router: Router) {
         this.MenuItems = [];
-        this.MenuItems.push(new MenuItem("Custom view"));
-        this.MenuItems.push(new MenuItem("Calling native method"));
+        this.MenuItems.push(new MenuItem("Platform specific UI"));
+        this.MenuItems.push(new MenuItem("Platform specific page"));
     }
 
     public onItemTap(args) {
@@ -29,8 +29,9 @@ export class MainComponent {
             case 0:
                 this.router.navigate(["customview"]);
                 break;
+            case 1:
+                this.router.navigate(["custompage"]);
+                break;
         }
-
-        console.log(this.MenuItems[args.index].name);
     }
 }

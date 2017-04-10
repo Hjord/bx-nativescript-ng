@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from 'nativescript-angular/router';
 import * as application from 'application';
+import { Page } from 'ui/page';
 
 
 @Component({
@@ -15,12 +16,7 @@ export class CustomviewComponent implements OnInit {
 
 	ngOnInit() {
 
-		if (application.android) {
-
-		}
-		else if (application.ios) {
-			
-		}
+		
 
 	}
 

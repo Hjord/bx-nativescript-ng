@@ -1,4 +1,4 @@
-<ActionBar title="Custom view">
+<ActionBar title="Platform specific UI">
     <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
 </ActionBar>
 
@@ -11,5 +11,6 @@
         <Label text="Hello from iOS!"></Label>
     </ios>
 
+    <Label text="I'm showing on both OS's, but differently" ios:backgroundColor="red" android:backgroundColor="green"></Label>
 
 </StackLayout>
